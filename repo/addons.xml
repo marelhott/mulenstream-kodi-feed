@@ -278,7 +278,7 @@ v3.0.0 (2024-04-17)
       <description lang="zh_TW">themoviedb.org是一個免費和開放的電影資料庫。它是完全由與您一樣的廣大使用者來更新資訊。 TMDb目前擁有數以百萬計的使用人次並且有著強大的API，許多受歡迎的媒體中心平台像Kodi藉由TMDb獲取電影的數據資料庫，海報和影片資訊，以豐富使用者體驗。</description>
     </extension>
   </addon>
-<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.1.3">
+<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.1.4">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.25.1"/>
