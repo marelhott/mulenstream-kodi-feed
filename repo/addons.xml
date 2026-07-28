@@ -278,11 +278,12 @@ v3.0.0 (2024-04-17)
       <description lang="zh_TW">themoviedb.org是一個免費和開放的電影資料庫。它是完全由與您一樣的廣大使用者來更新資訊。 TMDb目前擁有數以百萬計的使用人次並且有著強大的API，許多受歡迎的媒體中心平台像Kodi藉由TMDb獲取電影的數據資料庫，海報和影片資訊，以豐富使用者體驗。</description>
     </extension>
   </addon>
-<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.1.4">
+<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.2.0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.25.1"/>
         <import addon="script.module.websocket" version="0.58.0"/>
+        <import addon="script.module.pyqrcode" version="1.2.1" optional="true"/>
         <import addon="service.upnext" version="1.1.5"/>
         <import addon="service.sc.helper" version="1.0.0"/>
         <import addon="service.subtitles.subtrans" version="0.8.2" optional="true"/>
@@ -321,6 +322,13 @@ v3.0.0 (2024-04-17)
             obsahu. Tento doplňek pouze vyhledáva zpřístupněný obsah na kra.sk. Použití na vlastní odpovědnost!
         </disclaimer>
         <news>[B]Novinky[/B]
+              [I][B]0.2.0[/B][/I]
+            * [COLOR FF50FF42]add[/COLOR] nová TC sekcia (Filmy TC, Seriály TC) — streamovanie cez Torrentio + Comet s Real-Debrid
+            * [COLOR FF50FF42]add[/COLOR] prihlásenie do Real-Debrid cez QR kód priamo v addone
+            * [COLOR FF50FF42]add[/COLOR] sekcia Art filmy — kurátorované zoznamy (Criterion Collection, art-house, svetová kinematografia)
+            * [COLOR FF50FF42]add[/COLOR] premenovanie pôvodných sekcií na Filmy SC / Seriály SC (kra.sk ostáva nedotknutý)
+            * [COLOR FFFFAE42]chg[/COLOR] root menu reorganizované pre prehľadnejšiu navigáciu
+
               [I][B]2.5.11[/B][/I]
             * [COLOR FFFFAE42]fix[/COLOR] opravené scrobble API chyby a odstránené rušivé dialógy pri Trakt.tv
             * [COLOR FF50FF42]add[/COLOR] dvojúrovňová fronta pre Trakt requesty s až 13 pokusmi pred zahodením
