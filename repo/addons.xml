@@ -323,6 +323,9 @@ v3.0.0 (2024-04-17)
         </disclaimer>
         <news>[B]Novinky[/B]
               [I][B]0.2.5[/B][/I]
+            * [COLOR FFFFAE42]fix[/COLOR] "neboli nájdené žiadne streamy" pri platnom Real-Debrid účte — Torrentio vracalo HTTP 403, lebo addon posielal user agent knižnice requests, ktorý Cloudflare blokuje
+
+              [I][B]0.2.5[/B][/I]
             * [COLOR FFFFAE42]fix[/COLOR] jednorazový automatický scan už uložených seriálov po štarte Kodi
 
               [I][B]0.2.4[/B][/I]
