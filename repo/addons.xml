@@ -278,7 +278,7 @@ v3.0.0 (2024-04-17)
       <description lang="zh_TW">themoviedb.org是一個免費和開放的電影資料庫。它是完全由與您一樣的廣大使用者來更新資訊。 TMDb目前擁有數以百萬計的使用人次並且有著強大的API，許多受歡迎的媒體中心平台像Kodi藉由TMDb獲取電影的數據資料庫，海報和影片資訊，以豐富使用者體驗。</description>
     </extension>
   </addon>
-<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.2.0">
+<addon id="plugin.video.mulenstream" name="MulenStream" provider-name="Mulen" version="0.2.1">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.25.1"/>
@@ -322,6 +322,11 @@ v3.0.0 (2024-04-17)
             obsahu. Tento doplňek pouze vyhledáva zpřístupněný obsah na kra.sk. Použití na vlastní odpovědnost!
         </disclaimer>
         <news>[B]Novinky[/B]
+              [I][B]0.2.1[/B][/I]
+            * [COLOR FFFFAE42]fix[/COLOR] Uložit do knihovny (film/seriál/kolekcia/dokumenty) nechávalo Kodi 21 trvale v busy stave — chýbal endOfDirectory po RunPlugin akcii
+            * [COLOR FFFFAE42]fix[/COLOR] hromadné uloženie celej kolekcie ignorovalo tituly bez mediatype (typicky dokumenty) — teraz použije rovnaký fallback ako jednotlivé uloženie
+            * [COLOR FFFFAE42]fix[/COLOR] odstránená Trakt.tv integrácia (nikdy nebola dosiahnuteľná — chýbajúce nastavenia), únik Real-Debrid kľúča do logov/bug reportov, pád TC prehrávania a ďalšie opravy z generálneho auditu
+
               [I][B]0.2.0[/B][/I]
             * [COLOR FF50FF42]add[/COLOR] nová TC sekcia (Filmy TC, Seriály TC) — streamovanie cez Torrentio + Comet s Real-Debrid
             * [COLOR FF50FF42]add[/COLOR] prihlásenie do Real-Debrid cez QR kód priamo v addone
